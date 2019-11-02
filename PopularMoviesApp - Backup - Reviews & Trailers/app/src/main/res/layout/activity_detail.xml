@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/movie_poster"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/movie_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:layout_toRightOf="@id/movie_poster"
+            android:text="@string/movie_title"/>
+
+        <TextView
+            android:id="@+id/release_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/movie_title"
+            android:layout_toRightOf="@id/movie_poster"
+            android:text="@string/release_date"/>
+
+        <TextView
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/release_date"
+            android:layout_toRightOf="@id/movie_poster"
+            android:text="@string/movie_rating"/>
+
+        <CheckBox
+            android:id="@+id/favorite_cb"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/favorite"
+            android:layout_toRightOf="@id/movie_poster"
+            android:layout_below="@id/rating"/>
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_below="@id/movie_poster"
+            android:text="@string/description"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/reviews_label"
+            style="@style/DetailsActivityLabels"
+            android:text="@string/reviews_label" />
+
+        <ListView
+            android:id="@+id/reviews"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:paddingLeft="8dp"
+            android:text="@string/user_reviews"/>
+
+        <TextView
+            android:id="@+id/trailers_label"
+            style="@style/DetailsActivityLabels"
+            android:text="@string/trailers_label"/>
+
+        <ListView
+            android:id="@+id/trailers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/list_of_trailers"/>
+    </LinearLayout>
+</LinearLayout>

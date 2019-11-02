@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Popular Movies App</string>
+    <string name="description">This will be a very long description to determine that the quote will wrap onto multiple lines. It is a description of the movie or a basic plot synopsis.</string>
+    <string name="movie_rating">Movie Rating</string>
+    <string name="release_date">Release Date</string>
+    <string name="movie_title">Movie Title</string>
+    <string name="reviews_label">Reviews:</string>
+    <string name="trailers_label">Trailers:</string>
+    <string name="user_reviews">User reviews</string>
+    <string name="list_of_trailers">List of trailers</string>
+    <string name="favorite">Favorite</string>
+    <string name="sort_by">Sort By</string>
+    <string name="popular">Popular</string>
+    <string name="top_rated">Top Rated</string>
+
+    <string name="sort_by_key" translatable="false">sort_by</string>
+
+    <string name="sort_by_pref_label_popular">Popular</string>
+    <string name="sort_by_pref_label_top_rated">Top Rated</string>
+    <string name="sort_by_pref_label_favorites">Favorites</string>
+
+    <string name="sort_by_pref_value_popular" translatable="false">popular</string>
+    <string name="sort_by_pref_value_top_rated" translatable="false">top_rated</string>
+    <string name="sort_by_pref_value_favorites" translatable="false">favorites</string>
+</resources>
